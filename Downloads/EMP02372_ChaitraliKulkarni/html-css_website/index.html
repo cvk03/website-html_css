@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EMP02372_ChaitraliKulkarni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iK1u6UuJ6UqZadrU+6VcZl3/ohLJVl5CB9Qj1FF4qGz/mF" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="CardBox">
+        <div class="scrollable-container">
+        <nav class="navbar navbar-expand-md" style="z-index: 2; position: static; width: 95%">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="nav-link" style="color: white !important" href="#">
+                    <img src="assets/Logo.png" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-1">
+                        <li class="nav-item" style="color: white !important; font: normal normal 900 16px/19px Lato; letter-spacing: 0px; color: #FFFFFF; opacity: 1;">
+                            <a class="nav-link" style="color: white !important" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item" style="color: white !important; font: normal normal 600 16px/19px Lato; letter-spacing: 0px; color: #FFFFFF; opacity: 1;">
+                            <a class="nav-link" style="color: white !important" href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item" style="color: white !important; font: normal normal 600 16px/19px Lato; letter-spacing: 0px; color: #FFFFFF; opacity: 1;">
+                            <a class="nav-link" style="color: white !important" href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav-item" style="font: normal normal 600 16px/19px Lato; letter-spacing: 0px; color: #FFFFFF; opacity: 1;">
+                            <a class="nav-link" style="color: white !important" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mx-auto">
+                        <div class="input-group" style="width: 85%">
+                            <input type="text" class="form-control" id="search" name="search"
+                                placeholder="Search" aria-describedby="search-icon"
+                                style="border: none; margin: 0" />
+                            <button class="" type="submit" id="search-icon" style="background-color: white; border: none; padding: 0; margin: 0; height: 38px; width: 40px; border-top-right-radius: 10%; border-bottom-right-radius: 10%; opacity: 1;">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="24" focusable="false" style="pointer-events: none; display: block; width: 50%; height: 90%;">
+                                    <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="d-flex gap-2">
+                        <div class="ProfileImgBg">
+                            <img id="imageId" src="./assets/profile1.png" alt="User Icon" class="ProfileImg" />
+                        </div>
+                        <select id="person-select">
+                            <option class="changeImage" value="profile1">Daniel</option>
+                            <option class="changeImage" value="profile2">Sam</option>
+                            <option class="changeImage" value="profile3">John</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="im">
+                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="20" viewBox="0 0 20 20" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 90%;">
+                        <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators" style="color: transparent">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="fe" style="justify-content: flex-start; flex-direction: column">
+                        <div class="fe" style="gap: 50px; flex-direction: column; width: 100%">
+                            <div class="fe" style="width: 80%; flex-direction: column; justify-content: start; align-items: start;">
+                                <div class="fe" id="carousel_data" style="flex-direction: column; width: 300px; justify-content: end; height: 265px; color: white; gap: 10px;">
+                                    <div style="font-size: 30px; font-weight: bold">
+                                        Carousel 1
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non volutpat quam. Aenean at neque urna.
+                                    </div>
+                                    <div class="fe" style="justify-content: start; width: 100%">
+                                        <button style="background-color: #885ef0; border: none; box-shadow: 0px 3px 6px #00000029; border-radius: 5px; color: white; padding: 10px; width: 150px;">
+                                            Explore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fe" style="justify-content: flex-start; flex-direction: column; height: 500px;">
+                        <div class="fe" style="gap: 50px; flex-direction: column; width: 100%">
+                            <div class="fe" style="width: 80%; flex-direction: column; justify-content: start; align-items: start;">
+                                <div class="fe" id="carousel_data" style="flex-direction: column; width: 300px; justify-content: end; height: 265px; color: white; gap: 10px;">
+                                    <div style="font-size: 30px; font-weight: bold">
+                                        Carousel 2
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non volutpat quam. Aenean at neque urna.
+                                    </div>
+                                    <div class="fe" style="justify-content: start; width: 100%">
+                                        <button style="background-color: #885ef0; border: none; box-shadow: 0px 3px 6px #00000029; border-radius: 5px; color: white; padding: 10px; width: 150px;">
+                                            Explore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fe" style="justify-content: flex-start; flex-direction: column; height: 500px;">
+                        <div class="fe" style="gap: 50px; flex-direction: column; width: 100%">
+                            <div class="fe" style="width: 80%; flex-direction: column; justify-content: start; align-items: start;">
+                                <div class="fe" id="carousel_data" style="flex-direction: column; width: 300px; justify-content: end; height: 265px; color: white; gap: 10px;">
+                                    <div style="font-size: 30px; font-weight: bold">
+                                        Carousel 3
+                                    </div>
+                                    <div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non volutpat quam. Aenean at neque urna.
+                                    </div>
+                                    <div class="fe" style="justify-content: start; width: 100%">
+                                        <button style="background-color: #885ef0; border: none; box-shadow: 0px 3px 6px #00000029; border-radius: 5px; color: white; padding: 10px; width: 150px;">
+                                            Explore
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <p class="bh">Discover available services</p>
+
+    <div class="row" style="
+        background: transparent url('assets/image.svg') 0% 0% no-repeat padding-box;
+        margin: 19px;
+        background-size: cover;
+        padding: 30px 26px;
+        border-radius: 25px;
+        justify-content: space-evenly;
+        ">
+        <div class="col-md-3 bg-white rounded-3 mt-4 mb-4 pl-3">
+            <h1 id="day" class="display-4" style="
+                font: normal normal normal 75px/90px Lato;
+                letter-spacing: 0px;
+                color: #885ef0;
+                opacity: 1;
+            "></h1>
+            <h4 style="
+                text-align: left;
+                font: normal normal bold 16px/18px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+            ">
+                Today's Day
+            </h4>
+            <p id="dayText" class="lead" style="
+                text-align: left;
+                font: normal normal normal 16px/22px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+                margin-top: 20px;
+            "></p>
+        </div>
+
+        <div class="col-md-3 bg-white rounded-3 mt-4 mb-4 pl-3">
+            <h1 id="month" class="display-4" style="
+                font: normal normal normal 75px/90px Lato;
+                letter-spacing: 0px;
+                color: #885ef0;
+                opacity: 1;
+            "></h1>
+            <h4 style="
+                text-align: left;
+                font: normal normal bold 16px/18px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+            ">
+                Today's Month
+            </h4>
+            <p id="monthText" class="lead" style="
+                text-align: left;
+                font: normal normal normal 16px/22px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+                margin-top: 20px;
+            ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non volutpat quam. Aenean at neque urna. Integer sit amet libero id ligula congue fermentum. Proin.
+            </p>
+        </div>
+
+        <div class="col-md-3 bg-white rounded-3 mt-4 mb-4 pl-3">
+            <h1 id="year" class="display-4" style="
+                font: normal normal normal 75px/90px Lato;
+                letter-spacing: 0px;
+                color: #885ef0;
+                opacity: 1;
+            "></h1>
+            <h4 style="
+                text-align: left;
+                font: normal normal bold 16px/18px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+            ">
+                Today's Year
+            </h4>
+            <p id="yearText" class="lead" style="
+                text-align: left;
+                font: normal normal normal 16px/22px Lato;
+                letter-spacing: 0px;
+                color: #425656;
+                opacity: 1;
+                margin-top: 20px;
+            "></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="mt-1 pt-5">
+            <p class="bh">
+                Explore recommended services for you
+            </p>
+        </div>
+
+        <div class="px-2">
+            <p class="bottom-text px-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus sed lectus et accumsan. Duis quam lectus, condimentum non est ut, tempor volutpat tortor. Phasellus sit amet varius odio, varius efficitur ipsum. Mauris aliquet facilisis vehicula. Nullam blandit tortor convallis, molestie purus vel, ultrices felis. Nullam vel aliquet erat.<br />
+                <a href="" class="text-decoration-none">Click here to know more.</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="container">
+            <div class="row mb-4" style="row-gap: 20px">
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/image1.png" class="img-fluid" alt="Background Image" />
+                        <div class="ot">
+                            <div>
+                                <h1 class="fh">Questions?</h1>
+                                <p class="fp">
+                                    Learn about our services through frequently asked
+                                </p>
+                                <button class="btn-inside-overlay">View FAQs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <img src="assets/image2.png" class="img-fluid" alt="Background Image" />
+                        <div class="ot">
+                            <div class="fontz">
+                                <h1 class="fh">Stay up to date</h1>
+                                <p class="fp">Learn about our product updates</p>
+                                <button class="btn-inside-overlay">View FAQs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: #f3f1f9">
+        <div class="grid container">
+            <div class="row upper justify-content-between d-none d-md-flex">
+                <div class="col-1 mt-5">
+                    <h6>Services Hub</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Home</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Getting Started</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Release Notes</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Give Feedback</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Documentation</a></span>
+                </div>
+                <div class="col-1 mt-5">
+                    <h6>Contract</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Contract Details</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Manage Access</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Shared Files</a></span>
+                </div>
+                <div class="col-1 mt-5">
+                    <h6>Support</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Contact Support</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Customer Pulse</a></span>
+                </div>
+                <div class="col-1 mt-5">
+                    <h6>Services</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Catalog</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Plans</a></span>
+                </div>
+                <div class="col-1 mt-5">
+                    <h6>Health</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Critical Alerts</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Product Updates</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Office 365 Roadmap</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Assessments</a></span>
+                </div>
+                <div class="col-1 mt-5">
+                    <h6>Learning</h6>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Learn-on-demand</a></span>
+                    <span><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Workshops</a></span>
+                </div>
+            </div>
+            <div class="lr row justify-content-between mt-3">
+                <div class="col-12 col-sm-4 mt-3">
+                    <img src="assets/Path.svg" /> Current Culture: United States - English
+                </div>
+                <div class="col-12 col-sm-8 row mt-3" style="text-align: end">
+                    <span class="col"><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Contact Us</a></span>
+                    <span class="col"><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Privacy and Cookies</a></span>
+                    <span class="col"><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">Trademarks</a></span>
+                    <span class="col"><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">About our ads</a></span>
+                    <span class="col"><a href="#" style="font-size: inherit; text-decoration: none; color: inherit;">@Microsoft</a><span id="cy"></span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

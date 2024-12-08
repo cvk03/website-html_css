@@ -1,0 +1,295 @@
+/* General Styles */
+.text {
+  color: white;
+}
+
+.upper span {
+  display: block;
+  margin: 5px auto;
+}
+
+.lr {
+  font-weight: bold;
+}
+
+/* Profile Image Styles */
+.ProfileImgBg {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+  border-width: 1px;
+  opacity: 100%;
+  height: 45px;
+}
+
+.ProfileImg {
+  border-radius: 50%;
+  border-color: white;
+  border-width: 0.5px;
+  aspect-ratio: 1;
+  opacity: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+/* Button Styles */
+.ot .btn-inside-overlay {
+  border: 1px solid white;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: #885EF0;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+}
+
+
+/* CardBox Styles */
+/*.CardBox {
+  background: url('assets/MainBackground.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-radius: 20px;
+  margin: 19px;
+}
+*/
+.CardBox {
+  background: url('assets/MainBackground.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Allow height to adjust based on content */
+  max-height: calc(100vh - 60px); /* Adjust based on your menu height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  border-radius: 20px;
+  margin: 19px;
+}
+
+@media (max-width: 900px) {
+  .d-flex gap-2 {
+    position: fixed; /* Use fixed positioning */
+    top: 10px; /* Adjust as necessary */
+    right: 10px; /* Adjust as necessary */
+    z-index: 1000; /* Ensure it's above other elements */
+    /* Additional styling */
+    background-color: #885EF0; /* Match your theme */
+    border-radius: 6px; /* Optional: round corners */
+    padding: 10px; /* Optional: add some padding */
+    color: white; /* Ensure text is readable */
+  }
+}
+
+/* Overlay Text Styles */
+.ot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: #f2f2f2;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  bottom: 0px;
+  border-radius: 0px 0px 10px 10px;
+  opacity: 0.72;
+}
+
+.ot div {
+  text-align: center;
+}
+
+.ot h1 {
+  font: normal normal 900 38px/46px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+}
+
+.ot p {
+  font: normal normal normal 16px/20px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+}
+
+#carousel_data {
+  align-items: baseline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  .footer {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 486px) {
+  .ot {
+    top: 20%;
+  }
+}
+
+@media (min-width: 486px) and (max-width: 1200px) {
+  .ot {
+    top: 25%;
+  }
+}
+
+@media (min-width: 767px) {
+  .im {
+    display: none;
+  }
+
+  .container-fluid {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lr {
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .lr div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fh {
+    font-size: 20px !important;
+  }
+
+  .fp {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .CardBox {
+    /* Additional styles specific to mobile view */
+    margin: 10px; /* Adjust margins as necessary */
+    border-radius: 10px; /* Optionally, round corners more */
+  }
+
+  .scrollable-container {
+    /* If using a separate scrollable container */
+    max-height: calc(100vh - 60px); /* Match with the menu height */
+  }
+}
+
+
+
+/* Miscellaneous Styles */
+h6 {
+  width: 130px;
+  height: 16px;
+  text-align: left;
+  font: normal normal bold 13px/18px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+}
+
+.list-unstyled {
+  width: 130px;
+  text-align: left;
+  font: normal normal normal 12px/22px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+}
+
+.bg-light {
+  background-color: #F3F1F9 !important;
+}
+
+.with_logo {
+  height: 16px;
+  text-align: left;
+  font: normal normal bold 12px/18px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+}
+
+.bh {
+  text-align: center;
+  font: normal normal 900 28px/34px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+  opacity: 1;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.bottom-text {
+  text-align: center;
+  font: normal normal normal 16px/22px Lato;
+  letter-spacing: 0px;
+  color: #425656;
+}
+
+.carousel-item {
+  top: 19px;
+  left: 19px;
+  width: 100%;
+  height: 493px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.fe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 306px;
+  opacity: 1;
+  width: 100%;
+  font-size: 12px;
+  color: #425656;
+}
+
+#person-select {
+  text-align: center;
+  font: normal normal bold 12px / 15px Lato;
+  letter-spacing: 0px;
+  color: #885EF0;
+  opacity: 1;
+  border: none; /* Optional: Remove border if needed */
+  width: 100px;
+  height: 42px;
+  border-radius: 6px;
+}
+
+
+#carouselExampleIndicators {
+  position: relative;
+}
